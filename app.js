@@ -1,80 +1,71 @@
-//Computer makes random selection
-
-// const computerPlay = function(){
-//     let result = Math.floor(Math.random() * 3);
-//     if (result === 0) {
-//         return "rock"
-//     } else if (result === 1) {
-//         return "paper"
-//     } else {
-//         return "scissors"
-//     }
-// };
-
-
-//Shorter random selection by computer
+//Random selection by computer
 function computerPlay (){
     const randomChoice = ["rock", "paper", "scissors"]
     return randomChoice[Math.floor(Math.random() * randomChoice.length)];
 }
-//Initial player and computer score
-let computerScore = 0;
-let playerScore = 0;
 
+//Initial player and computer score
+let playerScore = 0
+let computerScore = 0
 
 //Check user selection versus computer selection, return winner
 function playRound(playerSelection, computerSelection) {
-    //You Win Conditions
+    //Winning Conditions
     if (
         playerSelection === "rock" && computerSelection === "scissors" ||
         playerSelection === "scissors" && computerSelection === "paper" || 
         playerSelection === "paper" && computerSelection === "rock") {
-        playerScore++;
-        return "You win!";
+        playerScore++
+        return "You win!"
+    }
 
-    //You Lose Conditions
-    } else if (
+    //Losing Conditions
+    if (
         playerSelection === "scissors" && computerSelection === "rock" ||
         playerSelection === "paper" && computerSelection === "scissors" ||
         playerSelection === "rock" && computerSelection === "paper") {
-        computerScore++;
-        return "You lose!";
+        computerScore++
+        return "You lose!"
+    }
 
-    //Tie
-    } else if (playerSelection === computerSelection){
-        return "It's a draw!";
-    } else if (playerSelection === null || "") {
-        alert("See ya later!")
-        console.clear();
-        resetGame();
-    }else {
-        alert("Not Rock, Paper or Scissors, try again");
-        let playerInput = prompt("How will you choose?").toLowerCase();
+    //Tie Conditions
+    if (playerSelection === computerSelection){
+        return "It's a draw!"
+    } 
+    
+    //Didn't enter rock, paper or scissors
+    else {
+        alert("Not Rock, Paper or Scissors, try again")
+        console.clear()
+        resetGame()
     }
 };
 
-//Runs the game for 5 rounds
+//Play through game
 function game(){
-        for(i = 0; i < 5; i++){
-        let computerSelection = computerPlay();
-        let playerSelection = prompt("How will you choose?").toLowerCase();
-        playRound();
-        console.log(playRound(playerSelection, computerSelection));
-        }
-    //Output end score
-    if (computerScore > playerScore) {
-        console.log("You lost this round!")
-        } else if (playerScore > computerScore) {
-       console.log("You won this round!")
-        } else if (computerScore == playerScore){
-            console.log("It's a tie!")
-        }
+    let computerSelection = computerPlay();
+    let playerSelection = prompt("How will you choose?").toLowerCase();
+    console.log(playRound(playerSelection, computerSelection))
+    score()
+
+//Play until score of 5
+function score(){
+    if (playerScore < 5 && computerScore < 5){
+        game()
+    } else if (playerScore === 5) {
+        console.log("YOU BEAT THE COMPUTER")
+    } else if (computerScore === 5){
+        console.log("YOU LOST TO THE COMPUTER")
+    } else if (playerScore === computerScore){
+        console.log("IT'S A DRAW")
+    }
+}
 }
 
+//Resets game
 function resetGame() {
-    let playerScore = 0;
-    let computerScore = 0;
-    game();
+    playerScore = 0
+    computerScore = 0
+    game()
 }
-
 game();
