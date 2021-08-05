@@ -44,7 +44,7 @@ function playRound(playerSelection, computerSelection) {
 //Play through game
 function game(){
     let computerSelection = computerPlay();
-    let playerSelection = prompt("How will you choose?").toLowerCase();
+    let playerSelection = prompt("Rock, Paper or Scissors?").toLowerCase();
     console.log(playRound(playerSelection, computerSelection))
     score()
 
