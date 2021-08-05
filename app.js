@@ -53,11 +53,11 @@ function score(){
     if (playerScore < 5 && computerScore < 5){
         game()
     } else if (playerScore === 5) {
-        console.log("YOU BEAT THE COMPUTER")
+        alert("YOU BEAT THE COMPUTER")
     } else if (computerScore === 5){
-        console.log("YOU LOST TO THE COMPUTER")
+        alert("YOU LOST TO THE COMPUTER")
     } else if (playerScore === computerScore){
-        console.log("IT'S A DRAW")
+        alert("IT'S A DRAW")
     }
 }
 }
