@@ -54,10 +54,13 @@ function score(){
         game()
     } else if (playerScore === 5) {
         alert("YOU BEAT THE COMPUTER")
+        resetGame()
     } else if (computerScore === 5){
         alert("YOU LOST TO THE COMPUTER")
+        resetGame()
     } else if (playerScore === computerScore){
         alert("IT'S A DRAW")
+        resetGame()
     }
 }
 }
