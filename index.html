@@ -8,16 +8,25 @@
     <script src="app.js"></script>
   </head>
   <body>
-    <h1>Rock Paper Scissors!</h1>
-    <h4>
-      *If you don't enter Rock, Paper or Scissors (case insensitive), game resets and
-      console clears
-    </h4>
-    <button class="pSelection">Rock</button>
-    <button class="pSelection">Paper</button>
-    <button class="pSelection">Scissors</button>
+    <header>
+      <h1 class="title">Choose your school of magic</h1>
+      <h4>
+        *If you don't enter Rock, Paper or Scissors (case insensitive), game resets and
+        console clears
+      </h4>
+    </header>
 
-    <div class="results"></div>
+    <main class="game">
+      <div class="game-container">
+        <button class="pSelection" id="rock">Rock</button>
+        <button class="pSelection" id="paper">Paper</button>
+        <button class="pSelection" id="scissors">Scissors</button>
+      </div>
+      <div class="results-container">
+        <div class="display-round"></div>
+        <div class="display-result"></div>
+      </div>
+    </main>
   </body>
 </html>
 
