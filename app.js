@@ -1,3 +1,8 @@
+const rock = document.querySelector("#rock")
+rock.addEventListener("click", playRound)
+const paper = document.addEventListener("click", playRound)
+const scissors = document.addEventListener("click", playRound)
+
 //Random selection by computer
 function computerPlay() {
   const randomChoice = ["rock", "paper", "scissors"]
@@ -6,6 +11,7 @@ function computerPlay() {
 
 let playerScore = 0
 let computerScore = 0
+let result = ""
 
 function playRound(playerSelection, computerSelection) {
   if (
@@ -14,7 +20,7 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "paper" && computerSelection === "rock")
   ) {
     playerScore++
-    return "You win!"
+    return (result = "You win!")
   }
 
   if (
@@ -23,11 +29,11 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "rock" && computerSelection === "paper")
   ) {
     computerScore++
-    return "You lose!"
+    return (result = "You lose!")
   }
 
   if (playerSelection === computerSelection) {
-    return "It's a draw!"
+    return (result = "It's a draw!")
   } else {
     alert("Not Rock, Paper or Scissors, try again")
     console.clear()
