@@ -1,0 +1,44 @@
+
+* {
+    border: 1px red solid;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+   width: 800px;
+   height: 100vh;
+   text-align: center;
+   /* background: rgb(53,92,125); */
+background: linear-gradient(0deg, rgba(53,92,125,1) 0%, rgba(108,91,123,1) 25%, rgba(192,108,132,1) 50%, rgba(246,114,128,1) 75%, rgba(248,177,149,1) 100%); }
+#results-container, #game-message {
+    background-color: #F67280; 
+}
+
+header {
+    padding: 3vh;
+    background-color: #355C7D;
+}
+
+button {
+    background-color:  #F8B195;
+    margin: 0;
+    width: auto;
+    height: 80px;
+    border: 2px #F67280 solid;
+    border-radius: 10px;
+}
+button#reset-game {
+    height: auto;
+}
+.results-container {
+    display: flex;
+    align-content: center;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 20px;
+}
+
