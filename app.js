@@ -1,7 +1,3 @@
-const rock = document.querySelector("#rock")
-rock.addEventListener("click", playRound)
-const paper = document.addEventListener("click", playRound)
-const scissors = document.addEventListener("click", playRound)
 
 //Random selection by computer
 function computerPlay() {
@@ -19,7 +15,7 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "scissors" && computerSelection === "paper") ||
     (playerSelection === "paper" && computerSelection === "rock")
   ) {
-    playerScore++
+    playerScore+= 1
     return (result = "You win!")
   }
 
@@ -28,7 +24,7 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "paper" && computerSelection === "scissors") ||
     (playerSelection === "rock" && computerSelection === "paper")
   ) {
-    computerScore++
+    computerScore+= 1
     return (result = "You lose!")
   }
 
