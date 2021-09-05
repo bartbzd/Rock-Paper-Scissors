@@ -7,6 +7,7 @@
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/svg-with-js.min.css">
 
   </head>
   <body>
@@ -19,7 +20,7 @@
         <!-- Player Choice -->
         <div class="game-buttons">
         <button class="pSelection" id="rock"><i class="fas fa-hand-rock fa-5x"></i>
-        <button class="pSelection" id="paper"><i class="fas fa-hand-paper fa-5x"></i></button>
+        <button class="pSelection" id="paper"><i class="fas fa-hand-paper fa-5x rotate-45"></i></button>
         <button class="pSelection" id="scissors"><i class="fas fa-hand-scissors fa-5x"></i></button>
       </div>
       <!-- Round and Scores -->
@@ -29,10 +30,11 @@
           <h2 id=pScoreNum>0</h2>
         </div>
         <div class="round-score">
-          <h2 id="round">Round: 3</h2>
           <div class="game-info" id="score">
-            <h5>You Won!</h5>
+            <h2>You Won!</h2>
           </div>
+          <h4 id="round">Round: 3</h4>
+          
         </div>
         <div class="score">
           <h3 id="cScore">Computer</h3>
