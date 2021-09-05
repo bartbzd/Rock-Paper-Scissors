@@ -23,8 +23,8 @@ header {
 }
 
 header > h2 {
-  font-size: 25px;
-  margin-top: 3vh;
+  font-size: 30px;
+  margin-top: 2vh;
 }
 /***** BUTTONS *****/
 button {
@@ -50,6 +50,11 @@ button#game-reset {
   border: none;
   border-radius: 10px;
   background-color: #f392b7;
+}
+.rotate-45 {
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 div#reset-game {
   margin: 15px;
