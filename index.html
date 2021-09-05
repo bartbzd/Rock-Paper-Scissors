@@ -11,27 +11,33 @@
   </head>
   <body>
     <header>
-      <h1 class="title">Rock Paper Scissors</h1>
-      <h2>Choose a selection!</h2>
+      <h1 class="title">ROCK PAPER SCISSORS</h1>
+      <h2>(First to 5 wins)</h2>
     </header>
 
     <main class="game">
       <div id="rules">
-        <h2>First to 5 wins</h2>
+        
       </div>
       <div class="game-container">
         <button class="pSelection" id="rock"><i class="fas fa-hand-rock fa-5x"></i>
         <button class="pSelection" id="paper"><i class="fas fa-hand-paper fa-5x"></i></button>
         <button class="pSelection" id="scissors"><i class="fas fa-hand-scissors fa-5x"></i></button>
+
+        
+      </div>
+      <div class="cSelection">
+        <button id="computer-selection">PC Selection</button>
       </div>
       <div class="results-container">
-        <div class="display-round">
-          <h3>Round:</h3>
+        <div class="round-info">
+          <h2 id="round">Round:3</h2>
+          <h4>Game Message</h4>
         </div>
       </div>
-      <div id="game-message">Gameplay message</div>
+      
       <div id="reset-game">
-        <button id = "reset-game">Reset</button>
+        <button id="game-reset">RESET</button>
       </div>
     </main>
     <script src="app.js"></script>
