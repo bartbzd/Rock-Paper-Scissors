@@ -28,20 +28,32 @@ header > h2 {
   margin-top: 2vh;
 }
 /***** BUTTONS *****/
-button {
+button.pSelection {
   background-color: #e5afec; /* #fbc6b1 old color*/
-  margin: 0;
   width: 100px;
   height: 100px;
   /* border: 5px #f67280 solid; */
   border-radius: 10px;
-  /* border: none; remove shadow */
+  border: none; /* remove shadow */
 }
 
+button#pcSelection {
+  opacity: 0.4;
+  background-color: #9ca6e5; /* #fbc6b1 old color*/
+  width: 100px;
+  height: 100px;
+  margin: 60px 30px;
+  border-radius: 10px;
+  border: none;
+}
+button:hover {
+  background-color: #e3c9e7;
+  border: 5px #e5afec solid;
+}
 .game-buttons {
   display: flex;
   justify-content: space-evenly;
-  margin: 50px 20px;
+  margin: 25px 20px;
 }
 
 button#game-reset {
@@ -50,6 +62,10 @@ button#game-reset {
   font-size: 28px;
   border-radius: 10px;
   background-color: #f392b7;
+}
+button#game-reset:hover {
+  background-color: #e7b4c7;
+  border: 5px #f392b7 solid;
 }
 .rotate-45 {
   -o-transform: rotate(45deg);
@@ -61,6 +77,7 @@ div#reset-game {
 }
 
 .score-board {
+  margin-top: 20px;
   font-size: 25px;
   display: flex;
   align-content: center;
@@ -69,11 +86,10 @@ div#reset-game {
 }
 
 .gameinfo > h3 {
-  font-size: 70px;
+  font-size: 55px;
 }
 div > h4 {
-  position: relative;
-  bottom: 0;
+  position: static;
 }
 
 .score {
