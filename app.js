@@ -8,7 +8,7 @@ const gameInfo = document.getElementById("game-info")
 const round = document.getElementById("round")
 const reset = document.getElementById("game-reset")
 const cBtn = document.querySelector("#pcSelection")
-const pBtn = document.querySelector(".pSelection")
+const pBtn = document.querySelectorAll(".pSelection")
 
 rock.addEventListener("click", () => pClick("rock"))
 paper.addEventListener("click", () => pClick("paper"))
