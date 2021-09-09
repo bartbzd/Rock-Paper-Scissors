@@ -28,7 +28,7 @@ function computerPlay() {
 }
 
 function pClick(playerSelection) {
-  gameInfo.style.fontSize = "35px"
+  gameInfo.style.fontSize = "30px"
   resetPlayerColors()
 
   if (endGame()) {
@@ -121,6 +121,8 @@ function updateScore() {
   cScore.textContent = `${computerScore}`
 
   if (endGame()) {
+    cSelect.classList = ""
+  cBtn.style.border = ""
     return finalScore()
   }
 }
@@ -152,7 +154,7 @@ function resetGame() {
   cScore.textContent = "0"
   round.textContent = ""
   gameInfo.textContent = "FIGHT!"
-  gameInfo.style.fontSize = "55px"
+  gameInfo.style.fontSize = "40px"
   cSelect.classList = ""
   cBtn.style.border = ""
 }
