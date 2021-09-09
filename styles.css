@@ -41,7 +41,7 @@ button#pcSelection {
   background-color: #acb4e5; /* #fbc6b1 old color*/
   width: 100px;
   height: 100px;
-  margin: 30px 30px 5px 30px;
+  margin: 5px;
   border-radius: 10px;
   border: none;
 }
@@ -54,7 +54,7 @@ button.pSelection:hover {
 .game-buttons {
   display: flex;
   justify-content: space-evenly;
-  margin: 25px 20px;
+  margin: 20px 20px;
 }
 
 button#game-reset {
@@ -141,5 +141,8 @@ div > h4 {
     align-content: center;
     background-color: #fbc6b1;
     border-radius: 10px;
+  }
+  button#pcSelection {
+    margin-bottom: 5px;
   }
 }
