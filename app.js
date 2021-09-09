@@ -121,8 +121,9 @@ function updateScore() {
   cScore.textContent = `${computerScore}`
 
   if (endGame()) {
+    resetPlayerColors()  
     cSelect.classList = ""
-  cBtn.style.border = ""
+    cBtn.style.border = ""
     return finalScore()
   }
 }
