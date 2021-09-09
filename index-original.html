@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">ROCK PAPER SCISSORS</h1>
+      <h2>(First to 5 wins)</h2>
+    </header>
+
+    <main class="game">
+      <!-- Player Choice -->
+      <div class="game-buttons">
+        <button class="pSelection" id="rock">
+          <i class="fas fa-hand-rock fa-5x"></i>
+        </button>
+        <button class="pSelection" id="paper">
+          <i class="fas fa-hand-paper fa-5x rotate-45"></i>
+        </button>
+        <button class="pSelection" id="scissors">
+          <i class="fas fa-hand-scissors fa-5x"></i>
+        </button>
+      </div>
+      <!-- Computer Choice-->
+      <div class="cSelection">
+        <button id="pcSelection"><i id="computerSelect"></i></button>
+      </div>
+      <!-- Round and Scores -->
+      <div class="score-board">
+        <div class="score">
+          <h3 id="pScore">Player</h3>
+          <h2 id="pScoreNum">0</h2>
+        </div>
+        <div class="score score1">
+          <div class="gameinfo" id="game-info">
+            <h3>Fight!</h3>
+          </div>
+          <div id="score-round">
+            <h4 id="round"></h4>
+          </div>
+        </div>
+        <div class="score">
+          <h3 id="cScore">Computer</h3>
+          <h2 id="cScoreNum">0</h2>
+        </div>
+      </div>
+      <!-- Reset Game -->
+      <div id="reset-game">
+        <button id="game-reset">RESET</button>
+      </div>
+    </main>
     <script src="app.js"></script>
-</head>
-<body>
-    <h1>Rock Paper Scissors!</h1>
-    <h4>*If you don't enter Rock, Paper or Scissors (case insensitive), game resets and console clears</h4>
-</body>
+  </body>
 </html>

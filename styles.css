@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/***** OVERALL *****/
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+}
+
+body {
+  width: 800px;
+  height: 100vh;
+  text-align: center;
+  background: #616b98;
+}
+
+/***** HEADER *****/
+header {
+  font-size: 30px;
+  padding: 3vh 0 0 0;
+  background-color: #fbc6b1;
+  border-radius: 10px;
+}
+
+header > h2 {
+  font-size: 30px;
+  margin-top: 2vh;
+}
+
+/***** BUTTONS *****/
+button.pSelection {
+  background-color: #e5afec; /* #fbc6b1 old color*/
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: none; /* remove shadow */
+}
+
+button#pcSelection {
+  background-color: #acb4e5; /* #fbc6b1 old color*/
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+button.pSelection:hover {
+  background-color: #e3c9e7;
+  border: 5px #e5afec solid;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 20px;
+}
+
+button#game-reset {
+  height: 60px;
+  width: 100px;
+  padding: 5px 20px;
+  font-size: 28px;
+  border-radius: 10px;
+  background-color: #f392b7;
+  border: none;
+}
+
+button#game-reset:hover {
+  background-color: #e7b4c7;
+  border: 5px #f392b7 solid;
+}
+
+.rotate-45 {
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+div#reset-game {
+  margin: 15px;
+}
+
+/***** Score board *****/
+.score-board {
+  margin-top: 20px;
+  font-size: 24px;
+  display: flex;
+  align-content: center;
+  background-color: #fbc6b1;
+  border-radius: 10px;
+}
+
+.gameinfo > h3 {
+  font-size: 40px;
+}
+
+div > h4 {
+  position: static;
+}
+
+.score {
+  width: 33.3%;
+}
+.score1 {
+  width: 40%;
+}
+
+/***** Media Queries *****/
+@media only screen and (min-width: 775px) {
+  header,
+  .game {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 775px) {
+  body,
+  header,
+  .game {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+  }
+  header,
+  h2 {
+    font-size: 25px;
+  }
+  .gameinfo {
+    font-size: 28px !important;
+  }
+  .score1 {
+    width: 60%;
+  }
+  .score-board {
+    margin-top: 10px;
+    font-size: 18px;
+    display: flex;
+    align-content: center;
+    background-color: #fbc6b1;
+    border-radius: 10px;
+  }
+  button#pcSelection {
+    margin-bottom: 5px;
+  }
+}
