@@ -103,3 +103,14 @@ div > h4 {
 .score {
   width: 33.3%;
 }
+
+/***** Media Queries *****/
+@media only screen and (max-width: 992px) {
+  header,
+  .game {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .gameinfo {
+    font-size: 32px !important;
+}
