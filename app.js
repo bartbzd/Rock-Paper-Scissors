@@ -21,7 +21,7 @@ paper.addEventListener("click", () => pClick("paper"))
 scissors.addEventListener("click", () => pClick("scissors"))
 reset.addEventListener("click", () => resetGame())
 
-//Computer Random Selection
+//Random Computer Selection
 function computerPlay() {
   const randomChoice = ["rock", "paper", "scissors"]
   return randomChoice[Math.floor(Math.random() * randomChoice.length)]
@@ -73,7 +73,7 @@ function playRound(playerSelection, computerSelection) {
   playerBtnColor(playerSelection)
 }
 
-//Change player button border whether won or lost round
+//Change player button border on won or lost round
 function playerBtnColor(playerSelection) {
   if (playerSelection === "rock" && result === "win") {
     rock.style.border = "5px #5cdb5c solid"
