@@ -106,7 +106,30 @@ div > h4 {
 .score1 {
   width: 40%;
 }
-
+/* Footer Icon */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 800px;
+  margin-bottom: 8px;
+  height: 35px;
+}
+i {
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+i:visited {
+  color: black;
+  text-decoration: none;
+}
+i:hover {
+  transform: translateY(-0.2rem);
+}
 /***** Media Queries *****/
 @media only screen and (min-width: 775px) {
   header,
@@ -123,6 +146,9 @@ div > h4 {
     margin: 0 auto;
     max-width: 400px;
     width: 100%;
+  }
+  footer {
+    width: 400px;
   }
   header,
   h2 {
