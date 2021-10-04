@@ -2,7 +2,7 @@
 
 - A simple Rock Paper Scissors game
 
-## Languages used
+## Languages used:
 
 - HTML
 - CSS
