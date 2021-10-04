@@ -65,6 +65,7 @@ button#game-reset {
   font-size: 28px;
   border-radius: 10px;
   background-color: #f392b7;
+  color: black;
   border: none;
 }
 
@@ -83,6 +84,9 @@ div#reset-game {
   margin: 15px;
 }
 
+i {
+  color: black;
+}
 /***** Score board *****/
 .score-board {
   margin-top: 20px;
