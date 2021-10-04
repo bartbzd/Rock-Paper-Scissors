@@ -12,6 +12,7 @@
 body {
   width: 800px;
   height: 100vh;
+  margin-top: 20px;
   text-align: center;
   background: #616b98;
 }
@@ -20,6 +21,7 @@ body {
 header {
   font-size: 30px;
   padding: 3vh 0 0 0;
+
   background-color: #fbc6b1;
   border-radius: 10px;
 }
@@ -149,6 +151,7 @@ footer {
   header,
   .game {
     margin: 0 auto;
+    margin-top: 10px;
     max-width: 400px;
     width: 100%;
   }
